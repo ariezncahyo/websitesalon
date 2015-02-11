@@ -1,0 +1,1 @@
+<?php $year = '&copy; Company '.date('Y');$company = 'Company' ;$streetandnumber = 'Street and Number' ;$zipcode = 'Postal Code' ;$place = 'Place';$tel = 'Telephone';$email = 'info@company.com';$www = 'www.company.com';  ?>

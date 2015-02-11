@@ -1,0 +1,700 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#menu li{
+	list-style-type:none;
+	display:inline;
+}
+#logo{
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+#menu{
+	clear: none;
+	float: left;
+	width: 100%;
+	display: block;
+}
+#page{
+	clear: both;
+	float: left;
+	background-color:white;
+	margin-left: 0;
+	display: block;
+	color:#000;
+}
+
+#main{
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+#postmain{
+	padding:15px;
+}
+#sidebar{
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+#featured{
+	clear: none;
+	float: left;
+	width: 100%;
+	display: block;
+	font-size:16px;
+}
+#posts{
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#featured a:link{
+	color: #000;
+	text-decoration:none;
+}
+#posts{
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 95%;
+	display: block;
+}
+#posts a:link, a:visited, a:hover, a:active{
+	color: #000;
+	text-decoration:none;
+}
+.posttitle a:link{
+	text-decoration:none;
+}
+.postimage{
+	float:left;
+	margin-top:10px;
+	margin-bottom:15px;
+	margin-left:15px;
+}
+.post{
+	float:left;
+	width:90%;
+	margin-left:15px;
+	margin-bottom:15px;
+}
+.otherposts a:link, a:hover{
+	color:#000;
+	font-size:16px;
+	text-decoration:none;
+}
+.searchfield{
+	height:35px;
+	text-indent:10px;
+	font-size:14px;
+	color:#666;
+}
+.formfield{
+	height:35px;
+	text-indent:10px;
+	font-size:14px;
+	color:#666;
+	width:98%;
+}
+.main-feat{
+	float:left;
+	margin-right:10px;
+	margin-top: 15px;
+	width: 45%;
+}
+.formbutton {
+	-moz-box-shadow:inset 0px 39px 0px -24px #ffffff;
+	-webkit-box-shadow:inset 0px 39px 0px -24px #ffffff;
+	box-shadow:inset 0px 39px 0px -24px #ffffff;
+	background-color:#ffffff;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:arial;
+	font-size:15px;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+	margin-top:10px;
+}
+
+.formbutton:hover {
+	background-color:#ffffff;
+}
+.formbutton:active {
+	position:relative;
+	top:1px;
+}
+.socmedbuttons{
+	display:block;
+}
+.socmedlabel{
+	float:left;
+	display:block;
+	width:100%;
+	margin-top: 40px;
+	margin-left:15px;
+}
+.socmedimage{
+	float:left;
+    margin:8px;
+}
+#form{
+	float:left;
+	margin-top:20px;
+	background-color:#CCC;
+	padding: 25px;
+}
+.formlabel{
+	font-size:16px;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+#footer{
+	margin-top:15px;
+	position:relative;
+	float:left;
+	background-color:#000;
+	display:block;
+	color: #fff;
+	width:100%;
+}
+.left li{
+	margin-left:50px;
+	list-style:none;
+}
+.cname{
+	color:#fff;
+	font-size:18;
+	font-weight:bold;
+}
+#searcharea{
+	margin-top:15px;
+}
+.date{
+	font-size:12px;
+	color:#666;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+.detailpost{
+	line-height:1.6;
+	font-size:16px;
+}
+.left{
+	padding:25px;
+	position:relative;
+	float:left;
+	margin-right:25px;
+}
+#nav li{
+	margin-top:25px;
+	float:left;
+	display:block;
+	width:25%;
+	text-align:center;
+}
+a.pagelink:link	{ color: #fff;
+	text-shadow:2px 2px #000;
+	font-size:18px;
+	text-decoration:none;
+	font-weight:bold; }
+a.pagelink:visited	{ color: #fff;
+	text-shadow:2px 2px #000;
+	font-size:18px;
+	text-decoration:none;
+	font-weight:bold; }
+
+a.pagelink:active	{ color: #fff;
+	text-shadow:2px 2px #000;
+	font-size:18px;
+	text-decoration:none;
+	font-weight:bold; }
+
+a.pagelink:hover	{ color: #fff;
+	text-shadow:2px 2px #000;
+	font-size:18px;
+	text-decoration:none;
+	font-weight:bold; }
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#menu li{
+	list-style-type:none;
+	display:inline;
+}
+#logo{
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+   	width: 32%;   
+	display: block;
+}
+#menu{
+	clear: none;
+	float: left;
+	 width: 60%;  
+	display: block;
+}
+#page{
+	clear: both;
+	float: left;
+	background-color:white;
+	margin-left: 0;
+	display: block;
+}
+#postmain{
+	padding:20px;
+}
+#main{
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#sidebar{
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#featured{
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#posts{
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#featured a:link{
+	color: #000;
+	text-decoration:none;
+}
+#posts{
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 95%;
+	display: block;
+}
+
+.postimage{
+	float:left;
+	margin-top:10px;
+	margin-bottom:15px;
+	margin-left:15px;
+}
+.post{
+	float:left;
+	width:95%;
+	margin-left:15px;
+	margin-bottom:15px;
+}
+.searchfield{
+	height:35px;
+	text-indent:10px;
+	font-size:14px;
+	color:#666;
+	width:67%;
+}
+.formfield{
+	height:35px;
+	text-indent:10px;
+	font-size:14px;
+	color:#666;
+	width:98%;
+}
+.main-feat{
+	float:left;
+	margin-right:10px;
+	margin-top: 15px;
+	width: 45%;
+}
+.formbutton {
+	-moz-box-shadow:inset 0px 39px 0px -24px #ffffff;
+	-webkit-box-shadow:inset 0px 39px 0px -24px #ffffff;
+	box-shadow:inset 0px 39px 0px -24px #ffffff;
+	background-color:#ffffff;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:arial;
+	font-size:15px;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+	margin-top:10px;
+}
+
+.formbutton:hover {
+	background-color:#ffffff;
+}
+.formbutton:active {
+	position:relative;
+	top:1px;
+}
+.socmedbuttons{
+	display:block;
+}
+.socmedlabel{
+	margin-top: 40px;
+	margin-left:15px;
+}
+.socmedimage{
+	float:left;
+    margin:8px;
+}
+#form{
+	width:87%;
+	float:left;
+	margin-top:20px;
+	background-color:#CCC;
+	padding: 25px;
+}
+.formlabel{
+	font-size:16px;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+#footer{
+	margin-top:15px;
+	position:relative;
+	float:left;
+	background-color:#000;
+	display:block;
+	color: #fff;
+	width:100%;
+}
+.left li{
+	margin-left:50px;
+	list-style:none;
+}
+.cname{
+	color:#fff;
+	font-size:18;
+	font-weight:bold;
+}
+#searcharea{
+	margin-top:15px;
+}
+.date{
+	font-size:12px;
+	color:#666;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+.detailpost{
+	line-height:1.6;
+}
+.left{
+	padding:25px;
+	position:relative;
+	float:left;
+	margin-right:25px;
+}
+#nav li{
+	margin-top:55px;
+	float:left;
+	display:block;
+	width:25%;
+	text-align:center;
+}
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 93.1%;
+	max-width: 1232px;
+	padding-left: 0.95%;
+	padding-right: 0.95%;
+	margin: auto;
+}
+#menu li{
+	list-style-type:none;
+	display:inline;
+}
+#logo{
+	clear: both;
+	float: left;
+	margin-left: 0;
+	margin-top:10px;
+	margin-bottom:10px;
+	width: 38.7755%;
+	display: block;
+}
+#menu{
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.9795%;
+	display: block;
+}
+#page{
+	clear: both;
+	float: left;
+	background-color:white;
+	margin-left: 0;
+	display: block;
+	color:#000;
+	width:100%;
+}
+#page a:link, a:visited, a:active{
+	color:#000;
+}
+#main{
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 62%;
+	display: block;
+}
+#postmain{
+	padding:0;
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 62%;
+	display: block;
+	margin-top:10px;
+}
+#sidebar{
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 32%;
+	display: block;
+}
+#featured{
+	clear: none;
+	float: left;
+	margin-left: 0;
+	margin-top:10px;
+	margin-bottom:15px;
+	width: 100%;
+	display: block;
+}
+#featured a:link{
+	color: #000;
+}
+#posts{
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+.main-feat{
+	float:left;
+	margin-right:2px;
+	margin-top: 15px;
+	width: 49.6%;
+}
+.main-feat-post{
+	line-height:1.6;
+	width: 285px;
+	font-size:16px;
+}
+.clear{
+	clear:both;
+}
+.postimage{
+	float:left;
+	margin-top:10px;
+	margin-bottom:15px;
+}
+.post{
+	float:left;
+	width:60%;
+	margin-left:15px;
+}
+#footer{
+	margin-top:15px;
+	position:relative;
+	float:left;
+	background-color:#000;
+	display:block;
+	color: #fff;
+	width:100%;
+}
+.left li{
+	margin-left:50px;
+	list-style:none;
+}
+.cname{
+	color:#fff;
+	font-size:18;
+	font-weight:bold;
+}
+#searcharea{
+	margin-top:15px;
+}
+#form{
+	width:87%;
+	float:left;
+	margin-top:20px;
+	background-color:#CCC;
+	padding: 25px;
+}
+.formlabel{
+	font-size:16px;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+.searchfield{
+	background-color:#fff;
+	height:35px;
+	text-indent:10px;
+	font-size:14px;
+	color:#666;
+	width:75%;
+}
+.formfield{
+	height:35px;
+	text-indent:10px;
+	font-size:14px;
+	color:#666;
+	width:98%;
+}
+.formbutton {
+	-moz-box-shadow:inset 0px 39px 0px -24px #ffffff;
+	-webkit-box-shadow:inset 0px 39px 0px -24px #ffffff;
+	box-shadow:inset 0px 39px 0px -24px #ffffff;
+	background-color:#ffffff;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:arial;
+	font-size:15px;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+	margin-top:10px;
+}
+
+.formbutton:hover {
+	background-color:#ffffff;
+}
+.formbutton:active {
+	position:relative;
+	top:1px;
+}
+.socmedbuttons{
+	display:block;
+}
+.socmedlabel{
+	margin-top: 40px;
+	margin-left:15px;
+}
+.socmedimage{
+	float:left;
+    margin:8px;
+}
+#nav li{
+	margin-top:55px;
+	float:left;
+	display:block;
+	width:25%;
+	text-align:center;
+}
+
+}
+.posttitle{
+	display:block;
+	margin-top:15px;
+	margin-bottom:15px;
+	font-size:18px;
+	font-weight:bold;
+}
+.postbody{
+	font-size:16px;
+	line-height:1.5;
+}
+.somemargins{
+	margin-top:15px;
+	margin-bottom: 15px;
+}
+.date{
+	font-size:12px;
+	color:#666;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+.detailpost{
+	line-height:1.6;
+	width:100%;
+	float:left;
+	display:block;
+}
+.left{
+	padding:25px;
+	position:relative;
+	float:left;
+	margin-right:25px;
+}
+

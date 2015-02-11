@@ -1,0 +1,1 @@
+<?php $urltwitter = 'www.twitter.com/yourlink' ;$urlfacebook = 'www.facebook.com/yourlink' ;$urlyoutube = 'www.youtube.com/yourlink' ;$urllinkedin = 'www.linkedin.com/yourlink' ;$urlinstagram = 'www.instagram.com/yourlink' ;  ?>
