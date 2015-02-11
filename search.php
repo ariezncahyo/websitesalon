@@ -32,11 +32,7 @@ if(isset($_POST['submit-form'])) {
 <body>
 <div class="gridContainer clearfix">
   <div id="logo"><a href="index.php"><img src="images/uploads/branding/companylogo.png"></a></div>
-  <div id="menu"><div id="nav"><?php 
-	  while ($f2 = mysqli_fetch_array($nav)){
-				echo "<li><a href='page.php?title=".$f2['urltitle']."' class='pagelink'>";
-				echo $f2['title']."</a></li>";
-	  		}    ?>
+  <div id="menu"><div id="nav">
    </div></div>
   <div id="page">
     <div id="postmain"><h3>Search Results</h3>
