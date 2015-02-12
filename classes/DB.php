@@ -1,10 +1,10 @@
 <?php
 class DB{
 	
-	public $server = 'localhost';
-	public $user = 'rik';
-	public $passwd = '1234';
-	public $db = 'rikdekyvere';
+	public $server = '';
+	public $user = '';
+	public $passwd = '';
+	public $db = '';
 
 	
 
